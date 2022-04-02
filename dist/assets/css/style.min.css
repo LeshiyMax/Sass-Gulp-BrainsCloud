@@ -385,6 +385,9 @@ body {
   color: #fff;
   margin-bottom: 3rem;
 }
+.page__title--center {
+  text-align: center;
+}
 
 .header {
   display: flex;
@@ -1048,9 +1051,17 @@ body {
   padding: 0;
 }
 
+.form--auth {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
 .form__group {
   margin-bottom: 1.5rem;
   position: relative;
+}
+.form__group--md {
+  margin-bottom: 2.5rem;
 }
 
 .form__control {
@@ -1059,7 +1070,7 @@ body {
   background: none;
   border-radius: 0;
   box-shadow: none;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0.75rem;
   font-family: inherit;
   background-color: transparent;
   border: 0;
@@ -1088,6 +1099,23 @@ body {
   bottom: 0;
   z-index: 1;
   transition: width 0.2s ease-in-out;
+}
+
+.form__footer--center {
+  text-align: center;
+}
+
+.form__foter-list {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+.form__foter-list li {
+  margin: 0 0.5rem;
+}
+.form__foter-list a {
+  color: #fff;
 }
 
 .work {
@@ -1153,4 +1181,33 @@ body {
   padding: 0.4rem 0.9rem;
   font-size: 1.1rem;
   line-height: 1.3rem;
+}
+
+.cabinet {
+  margin-top: 5rem;
+  display: flex;
+}
+
+.cabinet__form {
+  width: 34rem;
+}
+
+.cabinet__avatar {
+  padding-left: 11rem;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.cabinet__avatar-image {
+  display: block;
+}
+
+.cabinet__file {
+  font-size: 1.4rem;
+  color: #2A5FE7;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.cabinet__file input {
+  display: none;
 }

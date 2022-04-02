@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title></title>
+    <title>cabinet</title>
 </head>
 
 <body>
@@ -48,7 +48,7 @@
               <nav class="nav">
                  <ul class="nav__list">
                     <li class="nav__item">
-                       <a href="" class="nav__link">Профиль</a>
+                       <a href="/profile.html" class="nav__link">Профиль</a>
                     </li>
                  </ul>
               </nav>
@@ -100,6 +100,42 @@
         <main class="main">
             <div class="container">
                 
+                <h1 class="page__title">Профиль</h1>
+                
+                <form action="" class="form">
+                   <div class="cabinet">
+                      <div class="cabinet__form">
+                         <div class="form__group form__group--md">
+                            <input placeholder="Ваше имя" type="text" class="form__control" value="Дмитрий кйк">
+                            <span class="form__line"></span>
+                         </div>
+                
+                         <div class="form__group form__group--md">
+                            <input placeholder="Ваше email" type="email" class="form__control" value="alex.provo@mail.com">
+                            <span class="form__line"></span>
+                         </div>
+                
+                         <div class="form__group form__group--md">
+                            <input placeholder="Новый пароль" type="password" class="form__control" value="">
+                            <span class="form__line"></span>
+                         </div>
+                
+                         <div class="form__group form__group--md">
+                            <input placeholder="Подтвердите пароль" type="password" class="form__control" value="">
+                            <span class="form__line"></span>
+                         </div>
+                         <button class="btn btn--blue btn--rounded btn--sm">Сохранить</button>
+                
+                      </div>
+                      <div class="cabinet__avatar">
+                         <img class="cabinet__avatar-image" src="/assets/images/avatar.jpg" alt="">
+                         <label class="cabinet__file">
+                            <input type="file">
+                            выбрать  аватар
+                         </label>
+                      </div>
+                   </div>
+                </form>
             </div>
         </main>
     </div>
