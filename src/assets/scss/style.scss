@@ -15,9 +15,10 @@ body {
     line-height: 2rem;
     color: $white;
 
-    // &.no-scroll {
-    //     overflow: hidden;
-    // }
+    &.no-scroll,
+    &.show-sidebar {
+        overflow: hidden;
+    }
 }
 
 *,
@@ -29,6 +30,7 @@ body {
 /* Blocks */
 @import 'blocks/page.scss';
 @import 'blocks/heade.scss';
+@import 'blocks/burger.scss';
 @import 'blocks/nav.scss';
 @import 'blocks/searh.scss';
 @import 'blocks/subnav.scss';
