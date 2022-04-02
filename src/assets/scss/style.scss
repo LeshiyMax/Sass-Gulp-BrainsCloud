@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'mixins';
 @import 'vendor/reset.scss';
 
 html {
@@ -13,6 +14,10 @@ body {
     font-size: 1.4rem; //14 px
     line-height: 2rem;
     color: $white;
+
+    // &.no-scroll {
+    //     overflow: hidden;
+    // }
 }
 
 *,
@@ -44,3 +49,4 @@ body {
 @import 'blocks/work.scss';
 @import 'blocks/tags.scss';
 @import 'blocks/cabinet.scss';
+@import 'blocks/modal.scss';
