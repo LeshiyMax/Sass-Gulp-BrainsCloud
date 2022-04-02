@@ -1,0 +1,22 @@
+.searh {
+   background-color: $primary;
+   width: 100%;
+   max-width: 21rem; 
+
+   .searh__input {
+      width: 100%;
+      height: 100%;
+      padding: 1.15rem 2rem;
+
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: 1.2rem;
+      color: $white;
+
+      &::placeholder {
+         color: rgba($white, .4)
+      }
+   }
+}
+

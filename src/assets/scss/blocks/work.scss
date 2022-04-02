@@ -1,0 +1,50 @@
+.work {
+   margin-bottom: 3rem;
+   box-shadow: 0px 15px 25px rgba($black, .35);
+   border-radius: 5px;
+   background-color: $primary;
+   display: flex;
+}
+
+.work__preview {
+   width: 310px;
+}
+
+.work__content {
+   display: flex;
+   flex-direction: column;
+   max-width: 290px;
+   padding: 2.5rem;
+}
+
+.work__foter {
+   margin-top: auto;
+   margin-left: auto;
+}
+
+.work__image {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.work__title {
+   font-weight: 500;
+   font-size: 2.4rem;
+   line-height: 2.8rem;
+   color: $white;
+   margin-bottom: 3rem;
+
+   a {
+      color: inherit;
+      text-decoration: none;
+   }
+}
+
+.work__text {
+   margin-bottom: 3rem;
+   font-size: 1.6rem;
+   line-height: 2.7rem;
+   color: $gray;
+}

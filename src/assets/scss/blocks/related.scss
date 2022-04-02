@@ -1,0 +1,50 @@
+.related {
+   padding-bottom: 3rem 0 .5rem;
+   border-bottom: 1px solid #1C1C1C;
+   padding: 3rem 0;
+   border-top: 1px solid #1C1C1C;
+}
+
+.related__title {
+   font-size: 1.6rem;
+   line-height: 1.9rem;
+   color: $white;
+   margin-bottom: 2rem;
+   font-weight: 500;
+}
+
+.related__list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.related__list-item {
+   width: 50%;
+   margin-bottom: 2.5rem;
+}
+
+.related__list-title {
+   color: #F3EBA2;
+   font-weight: 500;
+   line-height: 1.4rem;
+   text-overflow: ellipsis; // Обнрезает текст по ширене строки и добавляет 3 точки в концу
+   overflow: hidden;
+   white-space: nowrap;
+
+   a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}
+
+.related__list-date {
+   margin-top: .5rem;
+   font-size: 1.2rem;
+   line-height: 1.4rem;
+   color: #828282;
+}

@@ -1,0 +1,58 @@
+
+
+.nav__list {
+   display: flex;
+}
+
+.nav__item {
+   position: relative;
+
+
+   &:hover {
+      background-color: $blue;
+
+      > .subnav {
+         display:block
+      }
+   }
+}
+
+// .nav__item:hover >.subnav {
+//    display:block
+// }
+
+.nav__link {
+   display:block;
+   padding: 1.7rem;
+
+   font-size: 1.1rem;
+   line-height: 1.2rem;
+   text-transform: uppercase;
+   color: $white;
+   text-decoration: none;
+   
+
+   transition: background-color .2s linear;
+
+   
+
+   // Если есть элемент has-subnav тогда добавляем after 
+   &.has-subnav {
+      position: relative;
+      padding-right: 3.5rem;
+
+      &:after {
+         content: '';
+         border-style: solid;
+         border-width: 6px 5px 0 5px;
+         border-color: $white transparent transparent transparent;
+         right: 0;
+
+         position: absolute;
+         top: 50%;
+         right: 1.35rem;
+         transform: translateY(-50%);
+      }
+   }
+}
+
