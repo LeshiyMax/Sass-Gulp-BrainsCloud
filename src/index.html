@@ -5,7 +5,7 @@ title: Мой БЛОГ
 
 <!-- Stories -->
 <div class="stories">
-   <div class="stories__item">
+   <div class="stories__item" data-modal="story-modal">
       <div class="stories__title">Переехал в новую
          квартиру</div>
       <img class="storie__preview" src="/assets/images/story/story.jpg" alt="">
@@ -34,13 +34,13 @@ title: Мой БЛОГ
 <!-- Add post -->
 <div class="add-post">
    <form class="add-post__form" action="" method="post">
-      <textarea class="add-post__textarea " name="post-text" placeholder="Напишите что нибудь"></textarea>
+      <textarea class="add-post__textarea " name="post-text" placeholder="Напишите что нибудь" data-autoresize></textarea>
       <div class="add-post__form-actions">
          <label class="add-post__file" for="add-post-file">
             <input type="file" id="add-post-file">
          </label>
          <button class="add-post__send" type="submit">
-            <img src="/assets/images/ico/send.svg" alt="">
+            Отправить
          </button>
       </div>
    </form>
@@ -50,6 +50,7 @@ title: Мой БЛОГ
 <div class="post">
    <div class="post__content">
       <p class="post__description">
+    
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat nemo ipsam facilis dolores sit
          perspiciatis quibusdam adipisci minima quas, est maiores facere, quod provident natus tenetur ducimus officia
          architecto. Veniam, perspiciatis nisi saepe doloribus eos neque ex. Dolore laudantium at necessitatibus quos
@@ -100,7 +101,7 @@ title: Мой БЛОГ
 <article class="post">
    <div class="post__header ">
       <div class="embed">
-         <iframe src="https://www.youtube.com/embed/jLZ2r_2Zw_Y" title="YouTube video player"
+         <iframe src="" title="YouTube video player"
          frameborder="0"
          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
          allowfullscreen></iframe>

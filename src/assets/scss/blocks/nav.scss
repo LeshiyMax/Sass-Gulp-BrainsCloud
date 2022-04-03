@@ -4,8 +4,13 @@
    }
 
    &--mobile {
-      display: block;
+      display: none;
+
+      @include breakpoint($tablet-bp) {
+         display: block;
+      }
    }
+   
 }
 
 .nav__list {

@@ -8,6 +8,10 @@
 
    padding-bottom: 1rem;
    border-bottom: 1px solid #1C1C1C;
+
+   @include breakpoint($mobile-bp) {
+      padding: 1.5rem;
+   }
 }
 
 .post__preview {
@@ -31,7 +35,7 @@
 .post__title {
    font-weight: 500;
    font-size: 1.8rem;
-   line-height: 2.1rem;
+   line-height: 1.4;
    color: $white;
    margin-bottom: 1.5rem;
 
@@ -47,6 +51,8 @@
    &--mb0 {
       margin: 0;
    }
+
+
 }
 
 .post__subtitle {
@@ -98,6 +104,11 @@
    display:flex;
    justify-content: space-between;
    align-items: center;
+
+   @include breakpoint($mobile-bp) {
+      flex-direction: column;
+      align-items:flex-start;
+   }
 }
 
 
@@ -117,6 +128,9 @@
       }
    }
 
+   @include breakpoint($mobile-bp) {
+      margin-bottom: 1rem;
+   }
 
 }
 

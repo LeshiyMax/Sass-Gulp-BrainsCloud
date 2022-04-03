@@ -16,8 +16,8 @@
     <title>cabinet</title>
 </head>
 
-<body class="no-scroll show-sidebar">
-    <div class="page">
+<body class="">
+    <div class="page" id="page">
         <!-- Header -->
         <header class="header">
            <div class="header__left">
@@ -43,7 +43,7 @@
                     </li>
                  </ul>
               </nav>
-              <button class="burger " type="button">
+              <button class="burger " type="button" id="sidebarToggle">
                  <span>Открыть навигацию</span>
               </button>
            </div>
@@ -64,7 +64,7 @@
            </div>
         </header>
         <!-- Sidebar -->
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
            <div class="sidebar__header">
               <img src="/assets/images/header.jpg" alt="">
            </div>
@@ -83,13 +83,16 @@
                        </li>
                        <li class="nav__item">
                           <a href="#" class="nav__link has-subnav">Статьи</a>
-           
+        
                           <ul class="subnav">
                              <li><a class="subnav__link" href="">Создание сайтов</a></li>
                              <li><a class="subnav__link" href="">Интернет-маркетинг</a></li>
                              <li><a class="subnav__link" href="">Продвижение видео</a></li>
                           </ul>
-                       </li class="nav__item">
+                       </li>
+                       <li class="nav__item">
+                          <a href="/profile.html" class="nav__link">Профиль</a>
+                       </li>
                        <li class="nav__item">
                           <a href="" class="nav__link">Обо мне</a>
                        </li>
@@ -126,7 +129,7 @@
            </div><!-- /.sidebar__contetn -->
            <div class="sidebar__footer">
               <a href="/works.html" class="btn btn--red">Мои работы</a>
-              <button type="button" class="btn btn--blue">Написать мне</button>
+              <button type="button" class="btn btn--blue" data-modal="contact-modal">Написать мне</button>
            </div>
         </aside>
         <!-- Main -->
@@ -173,8 +176,72 @@
         </main>
     </div>
 
-    <div class="modal">
-      <video src="/assets/video/cote.mp4" class="modal__video" poster="/assets/images/poster-video.jpg"></video>
+    <div class="modal" id="story-modal">
+      <div class="modal__content modal__content--story">
+        <video controls  src="https://java-download.ru/other/cote.mp4"  class="modal__video" poster="">
+        </video>
+      </div>
+    </div><!-- /.modal -->    <div class="modal" id="contact-modal">
+       <div class="modal__content modal__content--contact">
+          <button type="submit" class="modal__close">
+             <img src="/assets/images/close.svg" alt="">
+          </button>
+    
+          <form action="" class="form form--auth">
+             <div class="form__group form__group--md">
+                <input placeholder="Ваше имя" type="text" class="form__control">
+                <span class="form__line"></span>
+             </div>
+          
+             <div class="form__group form__group--md">
+                <input placeholder="Ваше email" type="email" class="form__control" value="">
+                <span class="form__line"></span>
+             </div>
+          
+             <div class="form__group form__group--md">
+                <textarea placeholder="Текст сообщения"  class="form__control form__control--textarea" value=""></textarea>
+                <span class="form__line"></span>
+             </div>
+          
+             <div class="form__footer">
+                <div class="form__group form__group--md">
+                   <button type="submit" class="btn btn--blue btn--rounded btn--sm">Отправить</button>
+                </div>
+    
+             </div>
+          </form>
+    
+       </div><!-- /.modal__content -->
+    </div><!-- /.modal -->    <div class="modal">
+       <div class="modal__content">
+          <button type="submit" class="modal__close">
+             <img src="/assets/images/close.svg" alt="">
+          </button>
+    
+         <ul class="social">
+            <li class="social__item">
+               <a href="" class="social__link">
+               <img src="/assets/images/share/vk.svg" alt="">
+               </a>
+            </li>
+            <li class="social__item">
+             <a href="" class="social__link">
+             <img src="/assets/images/share/facebook.svg" alt="">
+             </a>
+          </li>
+          <li class="social__item">
+             <a href="" class="social__link">
+             <img src="/assets/images/share/twitter.svg" alt="">
+             </a>
+          </li>
+          <li class="social__item">
+             <a href="" class="social__link">
+             <img src="/assets/images/share/copy.svg" alt="">
+             </a>
+          </li>
+         </ul>
+    
+       </div><!-- /.modal__content -->
     </div><!-- /.modal -->    
     <script src="assets/js/app.js"></script>
 </body>
